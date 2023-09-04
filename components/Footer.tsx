@@ -12,10 +12,10 @@ const Footer = () => {
             <Image src={'/image/logo.png'} alt='logo' width={250} height={250} className='object-contain'/>
           </div>
           <p className='text-base text-gray-700'>
-            Movers and Shifters 2023 <br /> All right reserved;
+            Movers and Shifters 2023 <br /> All right reserved &copy;
           </p>
           <p>
-          Welcome to Abu Dhabi Movers & Shifters, your trusted partner for seamless transitions. Whether you're moving homes, shifting offices, or relocating internationally in Abu Dhabi, we've got you covered.
+          Welcome to Abu Dhabi Movers & Shifters, your trusted partner for seamless transitions. Whether you&apos;re moving homes, shifting offices, or relocating internationally in Abu Dhabi, we&apos;ve got you covered.
           </p>
         </div>
         <div className='hidden md:flex'>
