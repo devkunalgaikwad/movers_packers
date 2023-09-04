@@ -2,26 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html,
+body,
+:root{
+    background-color: white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.background-container {
+    background-image: url('/image/hero.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+.logo-bg{
+    background-image: url('/image/hero.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+.hero__image-overlay{
+    display: overlay;
+    background-image: url('/image/hero.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+.footer__links {
+    @apply flex-1 w-full flex md:justify-end flex-wrap max-md:mt-10 gap-20;
   }
+  
+.footer__link {
+    @apply flex flex-col gap-6 text-base min-w-[170px];
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.footer__copyrights-link {
+    @apply flex-1 flex sm:justify-end justify-center max-sm:mt-4 gap-10;
 }
+.hero-text {
+    display: overlay;
+    background-image: url('/hero_text-bg.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+.hero__image-overlay {
+    @layer absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
+  }
